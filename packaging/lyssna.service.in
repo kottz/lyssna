@@ -1,0 +1,13 @@
+[Unit]
+Description=Lyssna push-to-talk dictation
+PartOf=graphical-session.target
+After=pipewire.service graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=@CMAKE_INSTALL_FULL_BINDIR@/lyssna --daemon --model %h/.local/share/lyssna/models/ggml-parakeet-tdt-0.6b-v3-q4_k.bin --threads 8 --max-speech-ms 30000 --model-idle 300
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=default.target
