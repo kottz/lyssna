@@ -44,7 +44,3 @@ exec sh -c 'systemctl --user import-environment WAYLAND_DISPLAY SWAYSOCK XDG_CUR
 bindsym --no-repeat $mod+apostrophe exec $HOME/.local/bin/lyssna start
 bindsym --release $mod+apostrophe exec $HOME/.local/bin/lyssna stop
 ```
-
-```sh
-swaymsg reload
-```
