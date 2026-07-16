@@ -715,7 +715,7 @@ static int run_daemon(lyssna_params params) {
             fprintf(stderr, "No text recognized.\n");
             return;
         }
-        fprintf(stderr, "Recognized: %s\n", text.c_str());
+        fprintf(stderr, "Transcription completed.\n");
         type_text(params, text);
     };
 
