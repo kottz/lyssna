@@ -14,7 +14,7 @@ sudo pacman -S --needed base-devel cmake pipewire vulkan-headers shaderc wtype
 Clone, build, and install:
 
 ```sh
-git clone --recursive <lyssna-repository-url>
+git clone --recursive https://github.com/kottz/lyssna.git
 cd lyssna
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$HOME/.local"
 cmake --build build --target lyssna -j
