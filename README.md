@@ -11,8 +11,6 @@ Install the dependencies on Arch Linux:
 sudo pacman -S --needed base-devel cmake pipewire vulkan-headers shaderc wtype
 ```
 
-Clone, build, and install:
-
 ```sh
 git clone --recursive https://github.com/kottz/lyssna.git
 cd lyssna
